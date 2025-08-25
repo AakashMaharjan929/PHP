@@ -1,0 +1,243 @@
+
+/* Login css starts */
+#Login{
+    width: 100%;
+height: 42.5rem;
+background-color: white;
+}
+
+#pageLocation{
+    width: 100%;
+height: 5.07306rem;
+background: #FFF;
+padding-left: 4.56rem;
+display: flex;
+align-items: center;
+}
+
+#pageLocationText{
+    color: #999;
+font-family: Montserrat;
+font-size: 0.87681rem;
+font-style: normal;
+font-weight: 700;
+line-height: 1.31525rem; /* 150% */
+display: flex;
+gap: 1rem;
+}
+
+#pageLocationText b{
+    color: #000;
+font-family: Montserrat;
+font-size: 0.87681rem;
+font-style: normal;
+font-weight: 700;
+line-height: 1.31525rem; /* 150% */
+}
+
+#loginMain{
+    height: 32.78019rem;
+    width: 100%;
+background: white;
+display: flex;
+align-items: center;
+justify-content: center;
+gap: 10rem;
+}
+
+#loginMain img{
+    width: 25.13488rem;
+height: 20.49456rem;
+flex-shrink: 0;
+}
+
+#loginForm{
+    height: 27rem;
+width: 40%;
+background-color: white;
+padding: 2rem;
+}
+
+form{
+    display: flex;
+    flex-direction: column;
+}
+
+#WelcomeBack{
+    color: #1ABA1A;
+font-family: Montserrat;
+font-size: 1.75363rem;
+font-style: normal;
+font-weight: 700;
+line-height: 2.10438rem; /* 120% */
+}
+
+#loginToContinue{
+    color: #999;
+font-family: Roboto;
+font-size: 0.87681rem;
+font-style: normal;
+font-weight: 400;
+line-height: 1.49063rem; /* 170% */
+letter-spacing: 0.12525rem;
+text-transform: uppercase;
+padding-top: 1rem;
+}
+
+.loginLabel{
+    color: #000;
+font-family: Montserrat;
+font-size: 0.87681rem;
+font-style: normal;
+font-weight: 500;
+line-height: 1.31525rem; /* 150% */
+padding-top: 1.89rem;
+}
+
+#loginForm form input{
+    display: flex;
+width: 34.89519rem;
+height: 2.69313rem;
+padding: 0.81419rem 0.75156rem;
+justify-content: center;
+align-items: center;
+flex-shrink: 0;
+border-radius: 0.37581rem;
+border: 1.002px solid #CCC;
+background: #FFF;
+color: #999;
+font-family: Lato;
+font-size: 0.87681rem;
+font-style: normal;
+font-weight: 400;
+line-height: normal;
+margin-top: 0.7rem;
+padding: 1rem;
+}
+
+#loginForm form button{
+    display: flex;
+width: 8.69188rem;
+height: 3.19413rem;
+padding: 0.94413rem 2.65806rem 0.93756rem 2.65881rem;
+justify-content: center;
+align-items: center;
+flex-shrink: 0;
+border-radius: 0.62631rem;
+background: #1ABA1A;
+color: #FFF;
+text-align: center;
+font-family: Montserrat;
+font-size: 0.87681rem;
+font-style: normal;
+font-weight: 600;
+line-height: 1.31525rem; /* 150% */
+text-transform: uppercase;
+margin-top: 3.98rem;
+border: none;
+}
+
+#SignUpHere{
+    color: #999;
+font-family: Roboto;
+font-size: 0.875rem;
+font-style: normal;
+font-weight: 400;
+line-height: 1.22131rem; /* 139.577% */
+text-transform: uppercase;
+padding-top: 1rem;
+}
+
+#SignUpHere b a{
+    color: #1ABA1A;
+font-family: Roboto;
+font-size: 0.875rem;
+font-style: normal;
+font-weight: 400;
+text-decoration: none;
+line-height: 1.22131rem;
+text-transform: uppercase;
+}
+
+/* making login responsive */
+@media screen and (max-width: 1024px){
+    #loginForm form input{
+        width: 100%;
+    }
+}
+
+@media screen and (max-width: 768px){
+    #Login{
+        height: 54rem;
+    }
+
+    #loginMain{
+        flex-direction: column;
+        gap: 2rem;
+        height: 46rem;
+    }
+
+    #loginMain img{
+        width: 20rem;
+        height: 15rem;
+    }
+}
+
+@media screen and (max-width: 426px){
+    #loginForm{
+        width: 100%;
+    }
+}
+
+/* Login css ends */
+
+
+/* register css starts */
+
+#Register{
+    width: 100%;
+    height: 62.25rem;
+    background-color: white;
+}
+
+#RegisterMain{
+    height: auto;
+    width: 100%;
+background: white;
+display: flex;
+align-items: center;
+justify-content: center;
+gap: 10rem;
+}
+
+/* making Register responsive */
+@media screen and (max-width: 1024px){
+    #loginForm form input{
+        width: 100%;
+    }
+}
+
+@media screen and (max-width: 768px){
+    #Register{
+        height: 77rem;
+    }
+
+    #RegisterMain{
+        flex-direction: column;
+        gap: 2rem;
+        height: 46rem;
+    }
+
+    #RegisterMain img{
+        width: 20rem;
+        height: 15rem;
+    }
+}
+
+@media screen and (max-width: 426px){
+    #loginForm{
+        width: 100%;
+    }
+}
+
+/* Register css ends */

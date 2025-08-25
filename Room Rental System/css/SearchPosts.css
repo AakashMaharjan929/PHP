@@ -1,0 +1,264 @@
+
+/* All Posts starts */
+
+#SearchPosts{
+    width: 100%;
+    height: 100%;
+    background-color: white;
+}
+#allPostsAndFeaturedMain {
+    width: 100%;
+    height: auto;
+flex-shrink: 0;
+background: white;
+display: flex;
+}
+
+#AllPosts{
+    width: 56.4%;
+    height: 80rem;
+    background-color: white;
+}
+
+
+#AllPostsTitle {
+    height: 6.36rem;
+    width: 100%;
+    color: #000;
+    font-family: Montserrat;
+    font-size: 1.24425rem;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 1.86638rem; 
+    text-transform: uppercase;
+    display: flex;
+    align-items: center;
+    padding-left: 2.07rem;
+    background-color: white;
+}
+
+#SearchPostBox
+{
+    width: 100%;
+    background-color: white;
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+    margin-left: 5.31rem;
+    margin-top: 3rem;
+}
+
+
+
+#AllPost{
+    width: 44.79263rem;
+height: 15.41475rem;
+flex-shrink: 0;
+border-radius: 0.69125rem;
+background: rgba(231, 231, 231, 0.28);
+display: flex;
+}
+
+#AllPostImg{
+    width: 12.788rem;
+height: 12.02763rem;
+flex-shrink: 0;
+padding: 1rem;
+}
+
+#AllPostsTitle{
+    height: 5.32rem;
+    width: 100%;
+    color: #000;
+    font-family: Montserrat;
+    font-size: 1.24425rem;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 1.86638rem; 
+    text-transform: uppercase;
+    display: flex;
+    align-items: flex-end; 
+    padding-left: 2.07rem;
+    background-color: white;
+}
+
+#AllPostsBox{
+    padding-top: 2rem;
+}
+
+#AllPostTitle{
+    color: #000;
+font-family: Lato;
+font-size: 1.25rem;
+font-style: normal;
+font-weight: 700;
+line-height: 1.16131rem; /* 92.903% */
+padding: 0.5rem;
+}
+
+#AllPostDescription{
+    width: 90%;
+color: #000;
+font-family: Roboto;
+font-size: 0.875rem;
+font-style: normal;
+font-weight: 400;
+line-height: 1.41013rem; /* 161.159% */
+padding-left: 0.5rem;
+}
+
+#AllPostsBox a{
+    text-decoration: none;
+    color: black;
+}
+
+
+#AllPostPrice{
+    color: #000;
+font-family: Montserrat;
+font-size: 1.24425rem;
+font-style: normal;
+font-weight: 600;
+line-height: 1.49306rem; /* 120% */
+padding: 1rem;
+padding-left: 0.5rem;
+}
+
+#AllPostType{
+    display: flex;
+    width: 44%;
+    align-items: center;
+    justify-content: space-between;
+    padding-left: 0.5rem;
+}
+
+#AllPostLocation{
+    width: 5.46081rem;
+    height: 1.48113rem;
+    flex-shrink: 0;
+    border-radius: 0.41475rem;
+    background: rgba(26, 186, 26, 0.2); 
+    color: #1ABA1A;
+    font-family: Roboto;
+    font-size: 0.69125rem;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 1.03688rem; /* 150% */
+    text-transform: uppercase;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+#AllPostRoomType{
+    width: 4.99288rem;
+    height: 1.48113rem;
+    flex-shrink: 0;
+    border-radius: 0.41475rem;
+    background: rgba(241, 53, 43, 0.2);
+    color: #F1352B;
+    font-family: Roboto;
+    font-size: 0.69125rem;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 1.03688rem; /* 150% */
+    text-transform: uppercase;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+#AllPostPhoneNumber{
+    display: flex;
+    margin-top: 1.32rem;
+    flex-direction: row;
+    width: 100%;
+    margin-left: 0.5rem;
+}
+
+#AllPostPhoneIcon{
+    width: 1.52075rem;
+    height: 1.31338rem;
+    margin-top: 0;
+}
+
+#AllPostPhoneNumber p{
+    color: #000;
+    font-family: Lato;
+    font-size: 0.8295rem;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 1.41013rem; 
+}
+
+#searchPost{
+    text-decoration: none;
+    color: black;
+}
+
+/* making All Posts responsive */
+
+@media screen and (max-width: 1025px){
+    #allPostsAndFeaturedMain{
+        flex-direction: column;
+    }
+
+    #SearchPostBox{
+        width: 90%;
+    }
+
+    #AllPosts{
+        width: 100%;
+    }
+    
+    #FeaturedAndBestDeals {
+        width: 100%;
+        order: -1;
+      }
+}
+@media screen and (max-width: 769px){
+    #allPostsAndFeaturedMain{
+        flex-direction: column;
+    }
+
+    #SearchPostBox{
+        margin-left: 0;
+    }
+
+    #AllPosts{
+        width: 100%;
+    }
+
+    #AllPostInformation{
+        width: 60%;
+    }
+
+    #AllPostTitle{
+        width: 70%;
+    }
+    
+    #FeaturedAndBestDeals {
+        width: 100%;
+        order: -1;
+      }
+}
+
+@media screen and (max-width: 426px){
+    #AllPost{
+        flex-direction: column;
+        width: 100%;
+        height: 30rem;
+        align-items: center;
+    }
+}
+
+@media screen and (max-width: 320px){
+    #AllPost{
+        flex-direction: column;
+        width: 100%;
+        height: 34rem;
+        align-items: center;
+    }
+}
+
+/* All Posts ends */

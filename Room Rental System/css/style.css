@@ -1,0 +1,1780 @@
+/* Lato, roboto, and Montserrat font imported from google fonts */
+@import url('https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Roboto', sans-serif, Lato;
+    background-color: #f1f1f1;
+    width: 100%;
+    height: 100%;
+}
+
+/* header css starts */
+header {
+    background-color: #333;
+    text-align: center;
+    height: 9.2rem; 
+    z-index: 0;
+}
+
+header #menu{
+    width: 100%;
+    height: 9.25rem;
+    flex-shrink: 0;
+    background-color: white;
+    z-index: 999;
+    position: fixed;
+}
+
+#contactMenu{
+    width: 100%;
+    height: 3.625rem;
+    background-color: white;
+    display: flex;  
+    align-items: center;
+    justify-content: space-between;
+}
+
+.contactInfo{
+    display: flex;
+    align-items: center;
+}
+
+.postAndProfile{
+    display: flex;
+    align-items: center;
+}
+
+#contactMenu .landline{
+    float: left;
+    width: 6.87025rem;
+    height: 1.9355rem;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0.5rem;
+    flex-shrink: 0;
+    color: #000;
+    font-family: Lato;
+    font-size: 0.875rem;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 1.24425rem; 
+    border-radius: 0.41475rem;
+    background: #EBEEF6;
+    margin-left: 2rem;
+}
+
+.landline img{
+    width: 1.625rem;
+    height: 1.5625rem;
+    flex-shrink: 0;
+}
+
+#landlinNumber{
+    display: flex;
+    height: 1.24425rem;
+    width: 7.09413rem;
+    flex-direction: column;
+    justify-content: center;
+    flex-shrink: 0;
+    color: #000;
+    font-family: Roboto;
+    font-size: 0.9375rem;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 1.24425rem; /* 132.719% */
+}
+
+.phone{
+    float: left;
+    width: 6.87025rem;
+    height: 1.9355rem;
+    border-radius: 0.41475rem;
+    background: #EBEEF6;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0.6rem;
+    flex-shrink: 0;
+    color: #000;
+    font-family: Lato;
+    font-size: 0.875rem;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 1.24425rem; 
+}
+
+.phone img{
+    width: 2.125rem;
+    height: 1.625rem;
+    flex-shrink: 0;
+}
+
+#phoneNumber{
+    display: flex;
+    width: 8.22581rem;
+    height: 1.24425rem;
+    flex-direction: column;
+    justify-content: center;
+    flex-shrink: 0;
+    color: #000;
+    font-family: Roboto;
+    font-size: 0.9375rem;
+    font-style: normal;
+    font-weight: 900;
+    line-height: 1.24425rem; /* 132.719% */
+}
+
+.landlineBox{
+    display: flex;
+    align-items: center;
+}
+
+.phoneBox{
+    display: flex;
+    align-items: center;
+}
+.postAnAdvertisement{
+    display: flex;
+    width: 12.125rem;
+    height: 1.9355rem;
+    justify-content: center;
+    align-items: center;
+    gap: 0.50044rem;
+    border-radius: 0.41475rem;
+    background: #EBEEF6;
+    padding: 0.4rem;
+    font-family: Lato;
+    font-size: 0.9375rem;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 1.45163rem; /* 154.839% */
+    color: #000;
+}
+
+#marginLine{
+    width: 0.0625rem;
+    height: 1.9355rem;
+    background: #D1D1D1;
+    margin: 1rem;
+}
+
+.myProfile{
+    display: flex;
+    align-items: center;
+}
+
+.profileImage{
+    width: 1.9375rem;
+    height: 1.75rem;
+    flex-shrink: 0;
+    border-radius: 1.9375rem;
+}
+
+.myProfileText{
+    display: flex;
+    height: 1.45163rem;
+    width: 5.52994rem;
+    flex-direction: column;
+    justify-content: center;
+    flex-shrink: 0;
+    color: #000;
+    font-family: Lato;
+    font-size: 0.96775rem;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 1.45163rem;
+    margin-right: 2rem;
+}
+
+#logoAndLoginMenu{
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: space-between; /* Align items to the left */
+    height: 5.625rem;
+    width: 100%;
+    z-index: 2000;
+}
+
+#logo{
+    margin-left: 1rem;
+}
+
+.login{
+    width: 10rem;
+height: 2.59219rem;
+flex-shrink: 0;
+display: flex;
+flex-direction: column;
+color: #000;
+}
+
+.loginText a {
+    text-decoration: none;
+    color: #000;
+}
+
+.registerText a{
+    text-decoration: none;
+    color: #000;
+}
+
+.loginAndRegister{
+    display: flex;
+}
+
+.welcomeText{
+    color: #666;
+font-family: Lato;
+font-size: 0.76038rem;
+font-style: normal;
+font-weight: 400;
+line-height: 1.14056rem; /* 150% */
+text-transform: uppercase;
+}
+
+.loginText{
+    color: #000;
+font-family: Lato;
+font-size: 0.96775rem;
+font-style: normal;
+font-weight: 700;
+line-height: 1.45163rem; /* 150% */
+text-transform: uppercase;
+margin-left: 2.5rem;
+}
+
+.register{
+    width: 15rem;
+    height: 2.59219rem;
+    flex-shrink: 0;
+    display: flex;
+    flex-direction: column;
+    color: #000;
+
+}
+
+.newToGharbhadaText{
+    color: #666;
+    font-family: Lato;
+    font-size: 0.76038rem;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 1.14056rem; /* 150% */
+    text-transform: uppercase;
+}
+
+.registerText{
+    color: #000;
+    font-family: Lato;
+    font-size: 0.96775rem;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 1.45163rem; /* 150% */
+    text-transform: uppercase;
+    margin-left: 5rem;
+}
+
+#searchMenu{
+    width: 100%;
+height: 4.8125rem;
+flex-shrink: 0;
+background: #1ABA1A;
+display: flex;
+align-items: center;
+justify-content: space-between;
+z-index: 4000;
+}
+
+.searchBar{
+    width: 35.83881rem;
+height: 3.11063rem;
+flex-shrink: 0;
+border-radius: 2.07375rem;
+background-color: white;
+margin-left: 2rem;
+display: flex;
+align-items: center;
+}
+
+.searchBar input{
+    width: 33.83881rem;
+    height: 3.11063rem;
+    flex-shrink: 0;
+    border-radius: 2.07375rem;
+    background-color: white;
+    color: #999;
+font-family: Lato;
+font-size: 1.106rem;
+font-style: normal;
+font-weight: 400;
+line-height: normal;
+padding-left: 2rem;
+border: none;
+}
+
+.searchBar input:focus{
+    outline: none;
+}
+
+.searchBar img{
+    width: 0.98156rem;
+    height: 0.96775rem; 
+}
+
+
+.informationText{
+    color: #FFF;
+text-align: center;
+font-family: Roboto;
+font-size: 0.89863rem;
+font-style: normal;
+font-weight: 500;
+line-height: 1.34794rem; /* 150% */
+text-transform: uppercase;
+}
+
+.informationText:last-child{
+    margin-right: 2.5rem;
+}
+
+.informationTextGroup{
+    width: 50rem;
+    display: flex;
+align-items: center;
+justify-content: space-between;
+}
+
+/* Making header responsive */
+
+@media screen and (max-width: 1024px){
+    .informationText{
+        font-size: 80%;
+    }
+}
+
+@media screen and (max-width: 768px){
+    header{
+        height: 11.25rem;
+    }
+
+    header #menu{
+        position: relative;
+    }
+
+    #contactMenu{
+        flex-direction: column;
+    }
+    
+    #searchMenu{
+        flex-direction: column;
+        align-items: center;
+        height: 7rem;
+        justify-content: center;
+    }
+
+    .informationTextGroup{
+        margin-top: 1rem;
+        width: 90%;
+    }
+    
+    header #menu{
+        height: 11.25rem;
+    }
+
+    #menu #contactMenu{
+        height: 5rem;
+    }
+
+    .contactInfo{
+       margin-right: auto;
+    }
+
+    .postAndProfile{
+        margin-left: auto;
+    }
+}
+
+@media screen and (max-width: 426px){
+    header{
+        height: 19.7rem;
+    }
+    header #menu{
+        height: 19.77rem;
+        position: relative;
+    }
+
+    #menu #contactMenu{
+        height: 7rem;
+    }
+
+    #contactMenu .contactInfo{
+        display: flex;
+        flex-direction: row;
+        width: 100%;
+        justify-content: space-between;
+        margin-top: 0.5rem;
+    }
+
+    .landlineBox{
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        gap: 0.5rem;
+    }
+
+    .phoneBox{
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        gap: 0.5rem;
+        margin-right: 1rem;
+    }
+
+    #landlinNumber{
+        margin-left: 1.4rem;
+    }
+
+    .postAndProfile{
+        margin-top: 0.5rem;
+    }
+
+    #logoAndLoginMenu{
+        margin-top: 1.5rem;
+        flex-direction: column;
+        height: 9rem;
+        
+    }
+
+    #searchMenu{
+        height: 8rem;
+    }
+
+    .searchBar{
+        margin-left: 0;
+        margin-top: 1rem;
+        width: 22rem;
+    }
+
+    .searchBar input{
+        width: 20rem;
+    }
+
+    .informationTextGroup{
+        margin-left: 2rem;
+    }
+}
+
+@media screen and (max-width: 376px){
+    header{
+        height: 19.8rem;
+    }
+
+    .register{
+        width: 14rem;
+    }
+
+    #searchMenu{
+        height: 10rem;
+    }
+}
+
+@media screen and (max-width: 321px){  
+    header{
+        height: 19.7rem;
+    } 
+    .postAndProfile{
+        width: 17rem;
+        margin-left: 0;
+    }
+    .postAnAdvertisement{
+        width: 10.125rem;
+        height: 2.9355rem;
+    }
+
+    .loginAndRegister{
+        gap: 3rem;
+    }
+
+    .register{
+        width: 8rem;
+    }
+
+    .registerText{
+        margin-left: 0;
+    }
+
+    .login{
+        width: 7rem;
+    }
+
+    .loginText{
+        margin-left: 0;
+    }
+
+    .searchBar{
+        width: 19rem;
+    }
+
+    .searchBar input{
+        width: 17rem;
+    }
+}
+
+/* header css end */
+
+/* footer css start */
+footer {
+    width: 100%;
+height: 36.0625rem;
+flex-shrink: 0;
+background-color: green;
+display: flex;
+flex-direction: column;
+}
+
+#footerTop{
+    width: 100%;
+    height: 30.6rem;
+    background-color: rgb(255, 255, 255);
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding-left: 2.45rem;
+    padding-right: 2.45rem;
+    border-bottom:  1.106px solid rgba(153, 153, 153, 0.33);
+}
+
+#companyInformation{
+    height: 22rem;
+    width: 20.23rem;
+    background-color: rgb(255, 255, 255);
+}
+
+#CompanyName{
+    display: flex;
+width: 24.77138rem;
+height: 1.49306rem;
+flex-direction: column;
+justify-content: center;
+flex-shrink: 0;
+color: #000;
+font-family: Lato;
+font-size: 1.24425rem;
+font-style: normal;
+font-weight: 700;
+line-height: 1.49306rem; /* 120% */
+text-transform: uppercase;
+}
+
+#companyInformation h3{
+    display: flex;
+width: 6.5185rem;
+height: 1.64519rem;
+flex-direction: column;
+justify-content: center;
+margin-top: 2.13rem;
+flex-shrink: 0;
+color: #000;
+font-family: Roboto;
+font-size: 0.96775rem;
+font-style: normal;
+font-weight: 400;
+line-height: 1.64519rem; /* 170% */
+text-transform: uppercase;
+}
+
+#companyInformation h2{
+    display: flex;
+width: 17.71463rem;
+height: 2.4885rem;
+flex-direction: column;
+justify-content: center;
+flex-shrink: 0;
+color: #1ABA1A;
+font-family: Roboto;
+font-size: 2.07375rem;
+font-style: normal;
+font-weight: 700;
+line-height: 2.4885rem; /* 120% */
+}
+
+#address{
+    display: flex;
+width: 19rem;
+height: 3.29031rem;
+flex-direction: column;
+justify-content: center;
+flex-shrink: 0;
+color: #000;
+font-family: Lato;
+font-size: 0.96775rem;
+font-style: normal;
+font-weight: 400;
+line-height: 1.64519rem; 
+margin-top: 2.01rem;
+}
+
+#CompanyEmail{
+    display: flex;
+width: 13.30331rem;
+height: 1.45163rem;
+flex-direction: column;
+justify-content: center;
+flex-shrink: 0;
+color: #000;
+font-family: Roboto;
+font-size: 0.96775rem;
+font-style: normal;
+font-weight: 400;
+line-height: 1.45163rem;
+}
+
+#contactIcons{
+    display: flex;
+    width: 19rem;
+    height: 2.5rem;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 2.76rem;
+}
+
+.contactIcon{
+    display: flex;
+width: 2.41938rem;
+height: 2.41938rem;
+padding: 0.69125rem 0.70075rem 0.76038rem 0.72581rem;
+justify-content: center;
+align-items: center;
+flex-shrink: 0;
+border-radius: 1.20969rem;
+background: #E1E3EB;
+}
+
+#topCategories{
+    height: 22rem;
+    width: 11.02rem;
+    background-color: rgb(255, 255, 255);
+}
+
+#topCategories h1{
+    display: flex;
+width: 11.01519rem;
+height: 1.49306rem;
+flex-direction: column;
+justify-content: center;
+flex-shrink: 0;
+color: #000;
+font-family: Lato;
+font-size: 1.24425rem;
+font-style: normal;
+font-weight: 700;
+line-height: 1.49306rem; /* 120% */
+text-transform: uppercase;
+}
+
+#topCateogry{
+    display: flex;
+width: 7.53381rem;
+height: 18.29031rem;
+flex-direction: column;
+justify-content: center;
+flex-shrink: 0;
+color: #666;
+font-family: Roboto;
+font-size: 0.96775rem;
+font-style: normal;
+font-weight: 400;
+line-height: 2.03225rem; 
+text-transform: capitalize;
+margin-top: 2.13rem;
+}
+
+#company{
+    height: 22rem;
+    width: 6.5rem;
+    background-color: rgb(255, 255, 255);
+}
+
+#company h1{
+    display: flex;
+width: 6.50406rem;
+height: 1.49306rem;
+flex-direction: column;
+justify-content: center;
+flex-shrink: 0;
+color: #000;
+font-family: Lato;
+font-size: 1.24425rem;
+font-style: normal;
+font-weight: 700;
+line-height: 1.49306rem; /* 120% */
+text-transform: uppercase;
+}
+
+#companyLinks{
+    display: flex;
+width: 7.18894rem;
+height: 7.11981rem;
+flex-direction: column;
+justify-content: center;
+flex-shrink: 0;
+color: #666;
+font-family: Roboto;
+font-size: 0.96775rem;
+font-style: normal;
+font-weight: 400;
+line-height: 2.03225rem; /* 210% */
+text-transform: capitalize;
+margin-top: 2.13rem;
+}
+
+#FAQs{
+    height: 22rem;
+    width: 24.61rem;
+    background-color: rgb(255, 255, 255);
+}
+
+#FAQs h1{
+    display: flex;
+width: 8.78475rem;
+height: 1.49306rem;
+flex-direction: column;
+justify-content: center;
+flex-shrink: 0;
+color: #000;
+font-family: Lato;
+font-size: 1.24425rem;
+font-style: normal;
+font-weight: 700;
+line-height: 1.49306rem; /* 120% */
+text-transform: uppercase;
+}
+
+#FAQ{
+    display: flex;
+width: 24.60831rem;
+height: 20.59906rem;
+flex-direction: column;
+justify-content: center;
+flex-shrink: 0;
+color: #666;
+font-family: Roboto;
+font-size: 0.96775rem;
+font-style: normal;
+font-weight: 400;
+line-height: 2.03225rem; /* 210% */
+text-transform: capitalize;
+}
+
+#footerBottom{
+    width: 100%;
+    height: 5.4625rem;
+    background-color: rgb(255, 255, 255);
+    display: flex;
+    align-items: center;
+    padding-left: 2rem;
+}
+
+#footerBottom p{
+    color: #666;
+font-family: Roboto;
+font-size: 0.96775rem;
+font-style: normal;
+font-weight: 400;
+line-height: 1.64519rem; /* 170% */
+}
+
+#footerBottom p b{
+    color: #000;
+font-family: Roboto;
+font-size: 0.96775rem;
+font-style: normal;
+font-weight: 700;
+line-height: 1.64519rem;
+}
+
+/* making footer responsive */
+
+@media screen and (max-width: 1024px){
+    #CompanyName{
+        font-size: 100%;
+    }
+
+    #companyInformation h3{
+        font-size: 90%;
+    }
+
+    #contactIcons{
+        width: 15rem;
+    }
+
+    #topCategories h1{
+        font-size: 100%;
+    }
+
+    #company h1{
+        font-size: 100%;
+    }
+
+    #FAQs h1{
+        font-size: 100%;
+    }
+
+    #FAQ{
+        width: 90%;
+    }
+}
+
+@media screen and (max-width: 768px){
+    footer {
+        height: auto;
+        align-items: center;
+        justify-content: center;
+    }
+    
+    footer #footerTop{
+        flex-direction: column;
+        height: auto;
+        align-items: center;
+        justify-content: center;
+    }
+
+    #companyInformation{
+        width: 100%;
+        height: 100%;
+        margin-top: 1rem;
+    }
+
+    #topCategories{
+        width: 100%;
+        height: 100%;
+        margin-top: 1rem;
+    }
+
+    #company{
+        width: 100%;
+        height: 100%;
+        margin-top: 1rem;
+    }
+
+    #FAQs{
+        width: 100%;
+        height: 100%;
+        margin-top: 1rem;
+    }
+
+    #footerBottom{
+        align-items: center;
+        justify-content: center;
+    }
+
+    #footerBottom p{
+        font-size: 80%;
+    }
+}
+
+@media screen and (max-width: 426px){
+    footer {
+        height: auto;
+        align-items: center;
+        justify-content: center;
+    }
+
+    #CompanyName{
+        width: 90%;
+    }
+
+    #FAQ{
+        width: 90%;
+    }
+}
+
+@media screen and (max-width: 426px){
+    footer {
+        height: auto;
+        align-items: center;
+        justify-content: center;
+    }
+}
+
+@media screen and (max-width: 320px){
+    #address{
+        width: 90%;
+    }
+}
+
+/* footer css end */
+
+/* main css start */
+main {
+    width: 100%;
+height: auto;
+background-color: #ffffff;
+}
+
+/* recent posts css starts*/
+#RecentPosts {
+    width: 100%;
+height: 41.25rem;
+border-radius: 0.69125rem;
+background: white;
+}
+
+
+#RecentPostsTitle {
+    height: 5.02rem;
+    width: 100%;
+    color: #000;
+    font-family: Montserrat;
+    font-size: 1.24425rem;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 1.86638rem; 
+    text-transform: uppercase;
+    display: flex;
+    align-items: flex-end; 
+    padding-left: 2.07rem;
+    background-color: white;
+}
+
+/* slider css starts */
+.Slides {
+    display: flex;
+    justify-content: center;
+    flex-direction: row;
+    align-items: center;
+    background: #ffffff;
+    width: 100%;
+    height: 34.5rem;
+  }
+  
+  .slidesContainer {
+    max-width: 77.77rem; 
+    overflow: hidden;
+}
+
+#leftButton{
+    width: 2.765rem;
+    height: 5.52994rem;
+    flex-shrink: 0;
+    background-color: #EDEFF6;
+}
+
+#rightButton{
+    width: 2.765rem;
+    height: 5.52994rem;
+    flex-shrink: 0;
+    background-color: #EDEFF6;
+}
+
+  
+  .slider {
+    height: auto;
+    /* background: grey; */
+    width: 78rem;
+    margin: 2.5em 0em;
+    display: flex;
+    align-items: center;
+    transition: all 0.3s ease-in-out;
+  }
+
+  .slider a{
+    text-decoration: none;
+    color: black;
+  }
+  
+  .slide {
+    height: 34.5rem;
+    min-width: 15.48388rem;
+    background-color: rgb(255, 255, 255);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  
+  .btn {
+    border: none;
+    height: 3em;
+    width: 3em;
+    background: #0f0f5b;
+    cursor: pointer;
+  }
+
+  .slide img{
+    width: 12.788rem;
+height: 12.02763rem;
+flex-shrink: 0;
+margin-top: 3.04rem;
+  }
+
+  .slide h1{
+    display: flex;
+width: 12.125rem;
+height: 2.375rem;
+flex-direction: column;
+justify-content: center;
+flex-shrink: 0;
+color: #000;
+font-family: Lato;
+font-size: 1.0625rem;
+font-style: normal;
+font-weight: 700;
+line-height: 1.16131rem; 
+margin-top: 2.88rem;
+margin-right: auto;
+margin-left: 1.06rem;
+  }
+
+#price{
+    display: flex;
+width: 10.29956rem;
+height: 1.45163rem;
+flex-direction: column;
+justify-content: center;
+flex-shrink: 0;
+color: #000;
+font-family: Montserrat;
+font-size: 1.24425rem;
+font-style: normal;
+font-weight: 650;
+line-height: 1.49306rem;
+margin-top: 1.03rem;
+margin-right: auto;
+margin-left: 1.06rem;
+}
+
+#roomCardType{
+    display: flex;
+    width: 84%;
+    align-items: center;
+    justify-content: space-between;
+    margin-top: 1.96rem;
+}
+
+#roomCardTypeLocation{
+    width: 5.46081rem;
+height: 1.48113rem;
+flex-shrink: 0;
+border-radius: 0.41475rem;
+background: rgba(26, 186, 26, 0.2); 
+color: #1ABA1A;
+font-family: Roboto;
+font-size: 0.69125rem;
+font-style: normal;
+font-weight: 500;
+line-height: 1.03688rem; /* 150% */
+text-transform: uppercase;
+display: flex;
+align-items: center;
+justify-content: center;
+}
+
+
+
+#roomCardTypeForNumber{
+    width: 4.99288rem;
+height: 1.48113rem;
+flex-shrink: 0;
+border-radius: 0.41475rem;
+background: rgba(241, 53, 43, 0.2);
+color: #F1352B;
+font-family: Roboto;
+font-size: 0.69125rem;
+font-style: normal;
+font-weight: 500;
+line-height: 1.03688rem; /* 150% */
+text-transform: uppercase;
+display: flex;
+align-items: center;
+justify-content: center;
+}
+
+#PhoneNumberCard{
+    display: flex;
+    margin-top: 1.32rem;
+    flex-direction: row;
+    width: 100%;
+    margin-left: 0.5rem;
+}
+
+#phoneIcon{
+    width: 1.52075rem;
+height: 1.31338rem;
+margin-top: 0;
+}
+
+#PhoneNumberCard p{
+    color: #000;
+font-family: Lato;
+font-size: 0.8295rem;
+font-style: normal;
+font-weight: 700;
+line-height: 1.41013rem; 
+}
+  
+/* making slider responsive */
+  
+  @media screen and (max-width: 1025px) {
+    .slidesContainer {
+      width: 47rem;
+    }
+  }
+  
+  @media screen and (max-width: 768px) {
+    .slidesContainer {
+      width: 31rem;
+    }
+  }
+
+    @media screen and (max-width: 426px) {
+      .slidesContainer {
+        width: 15.4rem;
+      }
+    }
+
+    @media screen and (max-width: 322px) {
+        .slidesContainer {
+            width: 15em;
+          }
+      }
+/* slider css ends */
+
+
+
+/* recent posts css ends*/
+
+/* All posts and featured starts */
+
+/* All Posts starts */
+
+#AllPostsBox a{
+    text-decoration: none;
+    color: black;
+}
+
+#allPostsAndFeaturedMain {
+    width: 100%;
+    height: auto;
+flex-shrink: 0;
+background: white;
+display: flex;
+}
+
+#AllPosts{
+    width: 56.4%;
+    height: 80rem;
+    background-color: white;
+}
+
+
+#AllPostsTitle {
+    height: 6.36rem;
+    width: 100%;
+    color: #000;
+    font-family: Montserrat;
+    font-size: 1.24425rem;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 1.86638rem; 
+    text-transform: uppercase;
+    display: flex;
+    align-items: center;
+    padding-left: 2.07rem;
+    background-color: white;
+}
+
+#AllPostsBox
+{
+    width: 100%;
+    height: 100%;
+    background-color: white;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 1rem;
+    overflow-y: auto; 
+    scrollbar-color: #1ABA1A #f1f1f1; /* Blue scrollbar with light background */
+    scrollbar-width: thin;
+}
+
+#AllPostsBox::-webkit-scrollbar-thumb {
+    background-color: #001600 !important;
+    border-radius: 6px !important;
+}
+
+#AllPost{
+    width: 44.79263rem;
+height: 15.41475rem;
+flex-shrink: 0;
+border-radius: 0.69125rem;
+background: rgba(231, 231, 231, 0.28);
+display: flex;
+}
+
+#AllPostImg{
+    width: 12.788rem;
+height: 12.02763rem;
+flex-shrink: 0;
+padding: 1rem;
+}
+
+#AllPostsTitle{
+    height: 5.32rem;
+    width: 100%;
+    color: #000;
+    font-family: Montserrat;
+    font-size: 1.24425rem;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 1.86638rem; 
+    text-transform: uppercase;
+    display: flex;
+    align-items: flex-end; 
+    padding-left: 2.07rem;
+    background-color: white;
+}
+
+#AllPostsBox{
+    padding-top: 2rem;
+}
+
+#AllPostTitle{
+    color: #000;
+font-family: Lato;
+font-size: 1.25rem;
+font-style: normal;
+font-weight: 700;
+line-height: 1.16131rem; /* 92.903% */
+padding: 0.5rem;
+}
+
+#AllPostDescription{
+    width: 90%;
+color: #000;
+font-family: Roboto;
+font-size: 0.875rem;
+font-style: normal;
+font-weight: 400;
+line-height: 1.41013rem; /* 161.159% */
+padding-left: 0.5rem;
+display: -webkit-box;
+-webkit-line-clamp: 3;
+-webkit-box-orient: vertical;
+overflow: hidden;
+text-overflow: ellipsis;
+}
+
+#AllPostPrice{
+    color: #000;
+font-family: Montserrat;
+font-size: 1.24425rem;
+font-style: normal;
+font-weight: 600;
+line-height: 1.49306rem; /* 120% */
+padding: 1rem;
+padding-left: 0.5rem;
+}
+
+#AllPostType{
+    display: flex;
+    width: 44%;
+    align-items: center;
+    justify-content: space-between;
+    padding-left: 0.5rem;
+}
+
+#AllPostLocation{
+    width: 5.46081rem;
+    height: 1.48113rem;
+    flex-shrink: 0;
+    border-radius: 0.41475rem;
+    background: rgba(26, 186, 26, 0.2); 
+    color: #1ABA1A;
+    font-family: Roboto;
+    font-size: 0.69125rem;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 1.03688rem; /* 150% */
+    text-transform: uppercase;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+#AllPostRoomType{
+    width: 4.99288rem;
+    height: 1.48113rem;
+    flex-shrink: 0;
+    border-radius: 0.41475rem;
+    background: rgba(241, 53, 43, 0.2);
+    color: #F1352B;
+    font-family: Roboto;
+    font-size: 0.69125rem;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 1.03688rem; /* 150% */
+    text-transform: uppercase;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+#AllPostPhoneNumber{
+    display: flex;
+    margin-top: 1.32rem;
+    flex-direction: row;
+    width: 100%;
+    margin-left: 0.5rem;
+}
+
+#AllPostPhoneIcon{
+    width: 1.52075rem;
+    height: 1.31338rem;
+    margin-top: 0;
+}
+
+#AllPostPhoneNumber p{
+    color: #000;
+    font-family: Lato;
+    font-size: 0.8295rem;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 1.41013rem; 
+}
+
+/* making All Posts responsive */
+
+@media screen and (max-width: 1025px){
+    #allPostsAndFeaturedMain{
+        flex-direction: column;
+    }
+
+    #AllPosts{
+        width: 100%;
+    }
+    
+    #FeaturedAndBestDeals {
+        width: 100%;
+        order: -1;
+      }
+}
+
+@media screen and (max-width: 426px){
+    #AllPost{
+        flex-direction: column;
+        width: 100%;
+        height: 26rem;
+        align-items: center;
+    }
+}
+
+/* All Posts ends */
+
+/* Featured and Best Deals starts */
+
+/* Featured starts */
+
+#FeaturedAndBestDeals{
+    width: 43.6%;
+    height: 100%;
+    background-color: white;
+}
+
+
+.FeaturedAndBestDealsSlides{
+    display: flex;
+    justify-content: center;
+    flex-direction: row;
+    align-items: center;
+    background: #ffffff;
+    width: 100%;
+    height: 34.5rem;
+}
+
+#leftButton1{
+    width: 2.765rem;
+    height: 5.52994rem;
+    flex-shrink: 0;
+    background-color: #EDEFF6;
+}
+
+.FeaturedSlidesContainer{
+    max-width: 40rem; 
+    overflow: hidden;
+}
+
+.FeaturedSlider{
+    height: auto;
+    /* background: grey; */
+    width: 30.9rem;
+    margin: 2.5em 0em;
+    display: flex;
+    align-items: center;
+    transition: all 0.3s ease-in-out;
+}
+
+.FeaturedSlide{
+    height: 34.5rem;
+    min-width: 15.48388rem;
+    background-color: rgb(255, 255, 255);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.FeaturedSlide img{
+    width: 12.788rem;
+height: 12.02763rem;
+flex-shrink: 0;
+margin-top: 3.04rem;
+  }
+
+  .FeaturedSlide h1{
+    display: flex;
+width: 12.125rem;
+height: 2.375rem;
+flex-direction: column;
+justify-content: center;
+flex-shrink: 0;
+color: #000;
+font-family: Lato;
+font-size: 1.0625rem;
+font-style: normal;
+font-weight: 700;
+line-height: 1.16131rem; 
+margin-top: 2.88rem;
+margin-right: auto;
+margin-left: 1.06rem;
+  }
+
+#price1{
+    display: flex;
+width: 10.29956rem;
+height: 1.45163rem;
+flex-direction: column;
+justify-content: center;
+flex-shrink: 0;
+color: #000;
+font-family: Montserrat;
+font-size: 1.24425rem;
+font-style: normal;
+font-weight: 650;
+line-height: 1.49306rem;
+margin-top: 1.03rem;
+margin-right: auto;
+margin-left: 1.06rem;
+}
+
+#roomCardType1{
+    display: flex;
+    width: 84%;
+    align-items: center;
+    justify-content: space-between;
+    margin-top: 1.96rem;
+}
+
+#roomCardTypeLocation1{
+    width: 5.46081rem;
+height: 1.48113rem;
+flex-shrink: 0;
+border-radius: 0.41475rem;
+background: rgba(26, 186, 26, 0.2); 
+color: #1ABA1A;
+font-family: Roboto;
+font-size: 0.69125rem;
+font-style: normal;
+font-weight: 500;
+line-height: 1.03688rem; /* 150% */
+text-transform: uppercase;
+display: flex;
+align-items: center;
+justify-content: center;
+}
+
+
+
+#roomCardTypeForNumber1{
+    width: 4.99288rem;
+height: 1.48113rem;
+flex-shrink: 0;
+border-radius: 0.41475rem;
+background: rgba(241, 53, 43, 0.2);
+color: #F1352B;
+font-family: Roboto;
+font-size: 0.69125rem;
+font-style: normal;
+font-weight: 500;
+line-height: 1.03688rem; /* 150% */
+text-transform: uppercase;
+display: flex;
+align-items: center;
+justify-content: center;
+}
+
+#PhoneNumberCard1{
+    display: flex;
+    margin-top: 1.32rem;
+    flex-direction: row;
+    width: 100%;
+    margin-left: 0.5rem;
+}
+
+#phoneIcon1{
+    width: 1.52075rem;
+height: 1.31338rem;
+margin-top: 0;
+}
+
+#PhoneNumberCard1 p{
+    color: #000;
+font-family: Lato;
+font-size: 0.8295rem;
+font-style: normal;
+font-weight: 700;
+line-height: 1.41013rem; 
+}
+
+#leftButton1{
+    width: 2.765rem;
+    height: 5.52994rem;
+    flex-shrink: 0;
+    background-color: #EDEFF6;
+}
+
+#rightButton1{
+    width: 2.765rem;
+    height: 5.52994rem;
+    flex-shrink: 0;
+    background-color: #EDEFF6;
+}
+
+/* Featured ends */
+
+/* Best Deal starts */
+
+.FeaturedAndBestDealsSlides2{
+    display: flex;
+    justify-content: center;
+    flex-direction: row;
+    align-items: center;
+    background: #ffffff;
+    width: 100%;
+    height: 34.5rem;
+}
+
+#leftButton2{
+    width: 2.765rem;
+    height: 5.52994rem;
+    flex-shrink: 0;
+    background-color: #EDEFF6;
+}
+
+.FeaturedSlidesContainer2{
+    max-width: 40rem; 
+    overflow: hidden;
+}
+
+.FeaturedSlider2{
+    height: auto;
+    /* background: grey; */
+    width: 30.9rem;
+    margin: 2.5em 0em;
+    display: flex;
+    align-items: center;
+    transition: all 0.3s ease-in-out;
+}
+
+.FeaturedSlider2{
+    height: auto;
+    /* background: grey; */
+    width: 30.9rem;
+    margin: 2.5em 0em;
+    display: flex;
+    align-items: center;
+    transition: all 0.3s ease-in-out;
+}
+
+.FeaturedSlide2{
+    height: 34.5rem;
+    min-width: 15.48388rem;
+    background-color: rgb(255, 255, 255);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.FeaturedSlide2 img{
+    width: 12.788rem;
+height: 12.02763rem;
+flex-shrink: 0;
+margin-top: 3.04rem;
+  }
+
+  .FeaturedSlide2 h1{
+    display: flex;
+width: 12.125rem;
+height: 2.375rem;
+flex-direction: column;
+justify-content: center;
+flex-shrink: 0;
+color: #000;
+font-family: Lato;
+font-size: 1.0625rem;
+font-style: normal;
+font-weight: 700;
+line-height: 1.16131rem; 
+margin-top: 2.88rem;
+margin-right: auto;
+margin-left: 1.06rem;
+  }
+
+#price2{
+    display: flex;
+width: 10.29956rem;
+height: 1.45163rem;
+flex-direction: column;
+justify-content: center;
+flex-shrink: 0;
+color: #000;
+font-family: Montserrat;
+font-size: 1.24425rem;
+font-style: normal;
+font-weight: 650;
+line-height: 1.49306rem;
+margin-top: 1.03rem;
+margin-right: auto;
+margin-left: 1.06rem;
+}
+
+#roomCardType2{
+    display: flex;
+    width: 84%;
+    align-items: center;
+    justify-content: space-between;
+    margin-top: 1.96rem;
+}
+
+#roomCardTypeLocation2{
+    width: 5.46081rem;
+height: 1.48113rem;
+flex-shrink: 0;
+border-radius: 0.41475rem;
+background: rgba(26, 186, 26, 0.2); 
+color: #1ABA1A;
+font-family: Roboto;
+font-size: 0.69125rem;
+font-style: normal;
+font-weight: 500;
+line-height: 1.03688rem; /* 150% */
+text-transform: uppercase;
+display: flex;
+align-items: center;
+justify-content: center;
+}
+
+
+
+#roomCardTypeForNumber2{
+    width: 4.99288rem;
+height: 1.48113rem;
+flex-shrink: 0;
+border-radius: 0.41475rem;
+background: rgba(241, 53, 43, 0.2);
+color: #F1352B;
+font-family: Roboto;
+font-size: 0.69125rem;
+font-style: normal;
+font-weight: 500;
+line-height: 1.03688rem; /* 150% */
+text-transform: uppercase;
+display: flex;
+align-items: center;
+justify-content: center;
+}
+
+#PhoneNumberCard2{
+    display: flex;
+    margin-top: 1.32rem;
+    flex-direction: row;
+    width: 100%;
+    margin-left: 0.5rem;
+}
+
+#phoneIcon2{
+    width: 1.52075rem;
+height: 1.31338rem;
+margin-top: 0;
+}
+
+#PhoneNumberCard2 p{
+    color: #000;
+font-family: Lato;
+font-size: 0.8295rem;
+font-style: normal;
+font-weight: 700;
+line-height: 1.41013rem; 
+}
+
+#rightButton2{
+    width: 2.765rem;
+    height: 5.52994rem;
+    flex-shrink: 0;
+    background-color: #EDEFF6;
+}
+
+/* making featured and best deals responsive */
+
+@media screen and (max-width: 1025px){
+    #FeaturedAndBestDeals {
+        width: 100%;
+        order: -1;
+      }
+}
+
+@media screen and (max-width: 426px){
+    .FeaturedSlidesContainer{
+        max-width: 15rem; 
+        overflow: hidden;
+    }
+
+    .FeaturedSlidesContainer2{
+        max-width: 15rem; 
+        overflow: hidden;
+    }
+}
+
+
+#FeaturedAndBestDeal {
+    width: 100%;
+    height: 100%;
+    background-color: white; /* Optional: to ensure the element's background covers content underneath */
+    z-index: 1000; /* Optional: to ensure the element stays on top of other content */
+}
+
+.postAnAdvertisement a{
+    text-decoration: none;
+    color: black;
+}
+
+.myProfileText a{
+    text-decoration: none;
+    color: black;
+}
+
+
+

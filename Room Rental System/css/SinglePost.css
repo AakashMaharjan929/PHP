@@ -1,0 +1,435 @@
+#SinglePostMain{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+#SinglePostInfo{
+    width: 90%;
+    height: 45.75rem;
+    background-color: white;
+    display: flex;
+    align-items: center;
+}
+
+#SinglePostImage{
+    width: 40%;
+    height: 100%;
+    background-color: white;
+}
+
+#TransactionScreenShot{
+    width: 100%;
+    height: 2rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 0.3125rem;
+    font-family: Roboto;
+    font-size: 0.875rem;
+    font-style: normal;
+    font-weight: 400;
+    border: 1px solid #CCC;
+    background: white;
+}
+
+
+#SinglePostSpec{
+    width: 35%;
+    height: 100%;
+    background-color: white;
+    padding: 1rem;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+}
+
+#SinglePostContact{
+    width: 25%;
+    height: 100%;
+    background-color: white;
+    padding: 1rem;
+}
+
+#BookTour{
+    width: 40%;
+    height: 3.75rem;
+    background: #30ca47;
+    border-radius: 0.625rem;
+    border: none;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 1rem;
+    font-family: Roboto;
+    font-size: 1.1rem;
+    color: rgb(255, 255, 255);
+}
+
+/* #BookTour:hover{
+    background: #30ca47;
+} */
+
+  
+  /* Position the image container (needed to position the left and right arrows) */
+  .container {
+    position: relative;
+    width: 32.3125rem;
+  }
+  
+  /* Hide the images by default */
+  .mySlides {
+    display: none;
+  }
+  
+  .SlideMain{
+  width: 32.3125rem;
+  height: 33.8125rem;
+  flex-shrink: 0;
+  }
+  
+  
+  
+  /* Add a pointer when hovering over the thumbnail images */
+  .cursor {
+    cursor: pointer;
+  }
+  
+  /* Next & previous buttons */
+  .prev,
+  .next {
+    cursor: pointer;
+    position: absolute;
+    top: 40%;
+    width: auto;
+    padding: 16px;
+    margin-top: -50px;
+    color: white;
+    font-weight: bold;
+    font-size: 20px;
+    border-radius: 0 3px 3px 0;
+    user-select: none;
+    -webkit-user-select: none;
+  }
+  
+  /* Position the "next button" to the right */
+  .next {
+    right: 0;
+    border-radius: 3px 0 0 3px;
+  }
+  
+  /* On hover, add a black background color with a little bit see-through */
+  .prev:hover,
+  .next:hover {
+    background-color: rgba(0, 0, 0, 0.8);
+  }
+  
+  /* Number text (1/3 etc) */
+  
+  
+  .row{
+    display: flex;
+    gap: 2rem;
+    width: 32.3125rem;
+    margin-top:1rem;
+    justify-content: center;
+  }
+  
+  .row:after {
+    content: "";
+    display: table;
+    clear: both;
+  }
+  
+  /* Six columns side by side */
+  .column {
+    float: left;
+    width: 16.66%;
+  }
+
+  .column img{
+    width: 100%;
+    height: 7rem;
+  }
+  
+  /* Add a transparency effect for thumnbail images */
+  .demo {
+    opacity: 0.6;
+  }
+  
+  .active,
+  .demo:hover {
+    opacity: 1;
+  }
+
+  #SinglePostTitle{
+    color: #000;
+    font-family: Montserrat;
+    font-size: 1rem;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 1.2rem; /* 120% */
+  }
+
+  #SinglePostPrice{
+    color: #000;
+font-family: Lato;
+font-size: 1.375rem;
+font-style: normal;
+font-weight: 600;
+line-height: 1.65rem; /* 120% */
+padding-top: 2rem;
+padding-bottom: 2rem;
+  }
+
+#SinglePostType{
+    padding-left: 1rem;
+}
+
+#SinglePostType li{
+    color: #000;
+font-family: Montserrat;
+font-size: 0.87rem;
+font-style: normal;
+font-weight: 400;
+line-height: 1.35rem; /* 180% */
+}
+
+#roomCardType{
+    display: flex;
+    width: 57%;
+    align-items: center;
+    justify-content: space-between;
+    margin-top: 1.96rem;
+}
+
+#roomCardTypeLocation{
+    width: 5.46081rem;
+height: 1.48113rem;
+flex-shrink: 0;
+border-radius: 0.41475rem;
+background: rgba(26, 186, 26, 0.2); 
+color: #1ABA1A;
+font-family: Roboto;
+font-size: 0.69125rem;
+font-style: normal;
+font-weight: 500;
+line-height: 1.03688rem; /* 150% */
+text-transform: uppercase;
+display: flex;
+align-items: center;
+justify-content: center;
+}
+
+
+
+#roomCardTypeForNumber{
+    width: 4.99288rem;
+height: 1.48113rem;
+flex-shrink: 0;
+border-radius: 0.41475rem;
+background: rgba(241, 53, 43, 0.2);
+color: #F1352B;
+font-family: Roboto;
+font-size: 0.69125rem;
+font-style: normal;
+font-weight: 500;
+line-height: 1.03688rem; /* 150% */
+text-transform: uppercase;
+display: flex;
+align-items: center;
+justify-content: center;
+}
+
+#Specification{
+    height: 17.44rem;
+    width: 100%;
+    padding: 1rem;
+    border-top: 2px solid #E0E0E0;
+    border-bottom: 2px solid #E0E0E0;
+    margin-top: 2rem;
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+}
+
+#Specification h1{
+    color: #666;
+font-family: Montserrat;
+font-size: 0.75rem;
+font-style: normal;
+font-weight: 400;
+line-height: 1.125rem; /* 150% */
+text-transform: uppercase;
+}
+
+#Specification p{
+    color: #000;
+font-family: Roboto;
+font-size: 0.9rem;
+font-style: normal;
+font-weight: 600;
+line-height: 1.35rem; /* 180% */
+}
+
+#LanlordInfo{
+    width: 18.9375rem;
+height: 12.3125rem;
+flex-shrink: 0;
+border-radius: 0.625rem;
+background: #EDEFF6;
+padding: 1rem;
+}
+
+#LanlordInfo h1{
+    color: #666;
+font-family: Montserrat;
+font-size: 0.75rem;
+font-style: normal;
+font-weight: 400;
+line-height: 1.125rem; /* 150% */
+text-transform: uppercase;
+padding: 1rem;
+}
+
+#LandlordName{
+    padding: 1rem;
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    padding-top: 2rem;
+}
+
+#LanlordInfo p{
+    color: #666;
+font-family: Montserrat;
+font-size: 0.75rem;
+font-style: normal;
+font-weight: 400;
+line-height: 1.125rem; /* 150% */
+text-transform: uppercase;
+}
+
+#Note{
+    display: inline-flex;
+height: 8.71188rem;
+padding: 0.875rem 1.03125rem 0.83688rem 1.9375rem;
+justify-content: flex-end;
+align-items: center;
+flex-shrink: 0;
+border-radius: 0.625rem;
+background: #EDEFF6;
+margin-top: 1rem;
+}
+
+#Note p{
+    color: #666;
+font-family: Montserrat;
+font-size: 0.75rem;
+font-style: normal;
+font-weight: 400;
+line-height: 1.125rem; /* 150% */
+text-transform: uppercase;
+}
+
+#SinglePostDescription{
+    width: 90%;
+    padding: 1rem;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+}
+
+#SinglePostDescription h1{
+    color: #000;
+text-align: center;
+font-family: Montserrat;
+font-size: 1.125rem;
+font-style: normal;
+font-weight: 700;
+line-height: 1.6875rem; /* 150% */
+text-transform: uppercase;
+}
+
+#SinglePost{
+    width: 100%;
+height: auto;
+background-color: white;
+display: flex;
+flex-direction: column;
+align-items: center;
+}
+
+#SinglePostDescription p{
+    color: #000;
+font-family: Lato;
+font-size: 1rem;
+font-style: normal;
+font-weight: 500;
+line-height: 1.575rem; /* 180% */
+padding: 1rem;
+width: 90%;
+padding-top: 2rem;
+}
+
+/* making Single Post Responsive */
+@media screen and (max-width: 1024px){
+    #SinglePostInfo{
+        flex-direction: column;
+        height: auto;
+        gap: 2rem;
+        align-items: center;
+    } 
+
+    #Note{
+        width: 20rem;
+        height: 12rem;
+    }
+
+    #SinglePostSpec{
+        width: 100%;
+    }
+}
+
+@media screen and (max-width: 768px){
+    #SinglePostImage{
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+}
+
+@media screen and (max-width: 426px){
+    .SlideMain{
+        width: 20rem;
+    }
+
+    .mySlides{
+        width: 20rem;
+    }
+
+    .container{
+        width: 20rem;
+    }
+
+    .row{
+        width: 100%;
+    }
+
+    #SinglePostContact{
+        width: 100%;
+    }
+}
+
+@media screen and (max-width: 321px){
+    #LanlordInfo{
+        width: 17rem;
+    }
+
+    #Note{
+        width: 17rem;
+    }
+}

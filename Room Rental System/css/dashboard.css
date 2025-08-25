@@ -1,0 +1,241 @@
+/* Lato, roboto, and Montserrat font imported from google fonts */
+@import url('https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+header{
+    display: inline-flex;
+    width: 100%;
+    align-items: center;
+align-items: center;
+justify-content: space-between;
+background-color: black;
+height: 4rem;
+}
+
+#Dashboard{
+    padding-left: 2rem;
+    display: flex;
+    gap: 2rem;
+}
+
+#AdminInfo{
+    display: flex;
+height: 2.25rem;
+padding: 0.1875rem 0.9375rem 0.1875rem 0.1875rem;
+align-items: center;
+gap: 0.3125rem;
+border-radius: 2.25rem;
+background-color: white;
+margin-right: 2rem;
+}
+
+header p{
+    color: white;
+font-family: Roboto;
+font-size: 0.875rem;
+font-style: normal;
+font-weight: 400;
+line-height: normal;
+display: flex;
+align-items: center;
+gap: 0.5rem;
+}
+
+#AdminInfo p{
+    color: black;
+    padding: 1rem;
+    font-family: Roboto;
+}
+
+main{
+    height: auto;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+#DashboardMain{
+    width: 87%;
+    height: 6.4rem;
+    background-color: white;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+#Dashboard p a{
+    text-decoration: none;
+    color: white;
+}
+
+#TotalEarnings{
+    display: flex;
+    gap: 2rem;
+}
+
+#TotalUsers{
+    display: flex;
+    gap: 2rem;
+}
+
+#TotalPosts{
+    display: flex;
+    gap: 2rem;
+}
+
+#TotalEarnings p, #TotalUsers p, #TotalPosts p{
+    color: black;
+font-family: lato;
+font-size: 1.56038rem;
+font-style: normal;
+font-weight: 600;
+line-height: normal;
+}
+
+#TotalEarnings h1, #TotalUsers h1, #TotalPosts h1{
+    color: #262626;
+font-family: Montserrat;
+font-size: 0.85113rem;
+font-style: normal;
+font-weight: 300;
+line-height: normal;
+}
+
+#ListOfUsers{
+    width: 87%;
+    height: auto;
+    background-color: white;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 2rem;
+}
+
+#ListOfUsers h1{
+    color: #262626;
+font-family: Lato;
+font-size: 1.56038rem;
+font-style: normal;
+font-weight: 600;
+line-height: normal;
+margin-right: auto;
+padding-top: 2rem;
+}
+
+#ListOfUsers table{
+    width: 87%;
+    border-collapse: collapse; /* Ensures table borders collapse into a single border */
+    text-align: center;
+    margin-top: 2rem;
+}
+
+#ListOfUsers th,
+#ListOfUsers td {
+    border: 1px solid #dddddd; /* Add borders to cells */
+    padding: 8px; /* Add padding for better readability */
+}
+
+#ListOfUsers th {
+    background-color: rgba(255, 255, 255, 0.9); /* Light gray background for header */
+    color: #262626;
+font-family: Lato;
+font-size: 1.27669rem;
+font-style: normal;
+font-weight: 500;
+line-height: normal;
+}
+
+/* Even columns will have one color */
+#ListOfUsers tr:nth-child(even) {
+    background-color: rgba(26, 186, 26, 0.9);
+}
+#ListOfUsers tr:nth-child(even) td{
+    color: white;
+}
+
+/* Odd columns will have another color */
+#ListOfUsers tr:nth-child(odd) {
+    background-color: #ffffff; /* Light orange for odd columns */
+}
+
+
+#ListOfUsers td{
+    color: #262626;
+font-family: Roboto;
+font-size: 1rem;
+font-style: normal;
+font-weight: 400;
+line-height: normal;
+}
+
+#ListOfUsers td button{
+    background-color: #1AB21A;
+    color: white;
+    border: none;
+    border-radius: 0.25rem;
+    padding: 0.5rem 1rem;
+    cursor: pointer;
+}
+
+#ListOfUsers td img{
+    width: 12.71119rem;
+height: 11.95538rem;
+flex-shrink: 0;
+}
+
+#Logout{
+    display: flex;
+    width: 3.33rem;
+    height: 2rem;
+    align-items: center;
+    justify-content: center;
+    gap: 0.40181rem;
+    border-radius: 0.9rem;
+    background: #1ABA1A;
+    color: white;
+    text-align: center;
+    font-family: Lato;
+    font-size: 0.96431rem;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    border: none;
+}
+
+/* making dashboard responsive */
+@media screen and (max-width: 426px) {
+    #DashboardMain{
+        flex-direction: column;
+        height: 20rem;
+        margin-top: 2rem;
+    }
+    
+    #ListOfUsers td img{
+        width: 7.71119rem;
+    }
+}
+
+@media screen and (max-width: 376px) {
+    #ListOfUsers td img{
+        width: 7.71119rem;
+    }
+}
+
+@media screen and (max-width: 321px) {
+    header{
+        flex-direction: column;
+        gap: 1rem;
+        height: 10rem;
+        padding: 1rem;
+    }
+}
